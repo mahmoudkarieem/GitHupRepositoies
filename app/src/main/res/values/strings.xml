@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GitHup Repo</string>
+    <string name="arrow_back_app_bar">arrowback</string>
+    <string name="network_image_error_screen_error">network image error</string>
+    <string name="text_title_button_retry_screen_network_error">RETRY</string>
+    <string name="network_error_text">Network Error</string>
+    <string name="something_went_wrong_text_screen_network_error">Something went wrong..</string>
+    <string name="github_repositories_title_app_bar">Github Repositories</string>
+</resources>
