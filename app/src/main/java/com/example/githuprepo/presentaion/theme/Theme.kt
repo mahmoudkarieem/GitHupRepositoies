@@ -52,6 +52,7 @@ fun GitHupRepoTheme(
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
+        shapes =   replyShapes,
         content = content
     )
 }
