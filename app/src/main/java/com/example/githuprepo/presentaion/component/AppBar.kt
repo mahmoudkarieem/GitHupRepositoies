@@ -58,7 +58,7 @@ fun AppBar(
 @Composable
 private fun PreviewAppBar() {
     GitHupRepoTheme {
-     AppBar(title = "Github Repositories",)
+     AppBar(title = "Github Repositories")
 
 }
 }
