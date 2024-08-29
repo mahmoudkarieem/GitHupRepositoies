@@ -1,4 +1,4 @@
-package com.example.githuprepo.presentaion.screens
+package com.example.githuprepo.presentaion.screens.network_error_screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -25,7 +25,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.githuprepo.R
-import com.example.githuprepo.presentaion.component.AppBar
+import com.example.githuprepo.presentaion.common_component.AppBar
 import com.example.githuprepo.presentaion.theme.GitHupRepoTheme
 
 @OptIn(ExperimentalMaterial3Api::class)

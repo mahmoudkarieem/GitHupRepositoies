@@ -1,4 +1,4 @@
-package com.example.githuprepo.presentaion.component
+package com.example.githuprepo.presentaion.common_component
 
 import androidx.compose.foundation.background
 import androidx.compose.material.icons.Icons

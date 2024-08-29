@@ -1,4 +1,4 @@
-package com.example.githuprepo.presentaion.screens
+package com.example.githuprepo.presentaion.screens.repos_details_screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -29,9 +29,10 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.githuprepo.R
-import com.example.githuprepo.presentaion.component.AppBar
-import com.example.githuprepo.presentaion.component.DetailsItem
-import com.example.githuprepo.presentaion.data.RepoDetailsUiModel
+import com.example.githuprepo.presentaion.common_component.AppBar
+import com.example.githuprepo.presentaion.screens.repos_details_screen.components.DetailsItem
+import com.example.githuprepo.presentaion.screens.repos_details_screen.model.RepoDetailsUiModel
+import com.example.githuprepo.presentaion.screens.repos_details_screen.preview_data.repoDetailsUiModel
 import com.example.githuprepo.presentaion.theme.GitHupRepoTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -39,7 +40,8 @@ import com.example.githuprepo.presentaion.theme.GitHupRepoTheme
 fun DetailsScreen(
     modifier: Modifier = Modifier,
     repoDetailsUiModel: RepoDetailsUiModel,
-    onClickListenerButtonIssues: () -> Unit = {}
+    onClickListenerButtonIssues: () -> Unit = {},
+    onBackArrowClicked: () -> Unit = {}
 
 ) {
     Scaffold(
@@ -47,7 +49,9 @@ fun DetailsScreen(
             AppBar(
                 title = "Details",
                 titleStyle = MaterialTheme.typography.titleLarge,
-                fontWeight = FontWeight.Bold
+                fontWeight = FontWeight.Bold,
+                onBackArrowClicked = onBackArrowClicked
+
             )
         }
     ) { innerPadding ->
@@ -150,13 +154,8 @@ fun DetailsScreen(
 fun PreviewDetailsScreen() {
     GitHupRepoTheme {
         DetailsScreen(
-            repoDetailsUiModel = RepoDetailsUiModel(
-                imageUrl = R.drawable.google_image,
-                title = "language",
-                starsNumber = "1525",
-                language = "Python",
-                description = "Shared repository for open-sourced projects from the Google AI                     language team"
-            )
+            modifier = Modifier,
+            repoDetailsUiModel = repoDetailsUiModel
         )
     }
 }

@@ -1,4 +1,4 @@
-package com.example.githuprepo.presentaion.component
+package com.example.githuprepo.presentaion.screens.repos_details_screen.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.padding
@@ -11,7 +11,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.githuprepo.R
 
 @Composable
 fun DetailsItem(
